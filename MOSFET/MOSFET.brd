@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50.4" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -187,6 +187,30 @@
 <wire x1="60" y1="50" x2="50" y2="60" width="0" layer="20" curve="90"/>
 <wire x1="50" y1="60" x2="-50" y2="60" width="0" layer="20"/>
 <wire x1="-50" y1="60" x2="-60" y2="50" width="0" layer="20" curve="90"/>
+<wire x1="50.4" y1="39.2" x2="49.6" y2="40" width="0" layer="20" curve="-90"/>
+<wire x1="49.6" y1="40" x2="49.6" y2="48" width="0" layer="20"/>
+<wire x1="49.6" y1="48" x2="50.4" y2="48.8" width="0" layer="20" curve="-90"/>
+<wire x1="50.4" y1="48.8" x2="51.2" y2="48" width="0" layer="20" curve="-90"/>
+<wire x1="51.2" y1="48" x2="51.2" y2="40" width="0" layer="20"/>
+<wire x1="51.2" y1="40" x2="50.4" y2="39.2" width="0" layer="20" curve="-90"/>
+<wire x1="50.4" y1="-38.8" x2="49.6" y2="-38" width="0" layer="20" curve="-90"/>
+<wire x1="49.6" y1="-38" x2="49.6" y2="-30" width="0" layer="20"/>
+<wire x1="49.6" y1="-30" x2="50.4" y2="-29.2" width="0" layer="20" curve="-90"/>
+<wire x1="50.4" y1="-29.2" x2="51.2" y2="-30" width="0" layer="20" curve="-90"/>
+<wire x1="51.2" y1="-30" x2="51.2" y2="-38" width="0" layer="20"/>
+<wire x1="51.2" y1="-38" x2="50.4" y2="-38.8" width="0" layer="20" curve="-90"/>
+<wire x1="-50.4" y1="39.2" x2="-51.2" y2="40" width="0" layer="20" curve="-90"/>
+<wire x1="-51.2" y1="40" x2="-51.2" y2="48" width="0" layer="20"/>
+<wire x1="-51.2" y1="48" x2="-50.4" y2="48.8" width="0" layer="20" curve="-90"/>
+<wire x1="-50.4" y1="48.8" x2="-49.6" y2="48" width="0" layer="20" curve="-90"/>
+<wire x1="-49.6" y1="48" x2="-49.6" y2="40" width="0" layer="20"/>
+<wire x1="-49.6" y1="40" x2="-50.4" y2="39.2" width="0" layer="20" curve="-90"/>
+<wire x1="-50.4" y1="-38.8" x2="-51.2" y2="-38" width="0" layer="20" curve="-90"/>
+<wire x1="-51.2" y1="-38" x2="-51.2" y2="-30" width="0" layer="20"/>
+<wire x1="-51.2" y1="-30" x2="-50.4" y2="-29.2" width="0" layer="20" curve="-90"/>
+<wire x1="-50.4" y1="-29.2" x2="-49.6" y2="-30" width="0" layer="20" curve="-90"/>
+<wire x1="-49.6" y1="-30" x2="-49.6" y2="-38" width="0" layer="20"/>
+<wire x1="-49.6" y1="-38" x2="-50.4" y2="-38.8" width="0" layer="20" curve="-90"/>
 </plain>
 <libraries>
 <library name="Wurth_Elektronik_Passive_Capacitors_rev19a" urn="urn:adsk.eagle:library:491551">
@@ -880,9 +904,9 @@ design rules under a new name.</description>
 <param name="mdPadPad" value="5mil"/>
 <param name="mdPadVia" value="6mil"/>
 <param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdPad" value="5mil"/>
 <param name="mdSmdVia" value="0mil"/>
-<param name="mdSmdSmd" value="6mil"/>
+<param name="mdSmdSmd" value="5mil"/>
 <param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="40mil"/>
@@ -924,7 +948,7 @@ design rules under a new name.</description>
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="0.5mm"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -1168,27 +1192,27 @@ design rules under a new name.</description>
 <vertex x="-60" y="-60"/>
 </polygon>
 <via x="-50" y="-50" extent="1-16" drill="0.3"/>
-<via x="-50" y="-40" extent="1-16" drill="0.3"/>
-<via x="-50" y="-30" extent="1-16" drill="0.3"/>
+<via x="-48.222" y="-40.762" extent="1-16" drill="0.3"/>
+<via x="-48.349" y="-28.095" extent="1-16" drill="0.3"/>
 <via x="-50" y="-20" extent="1-16" drill="0.3"/>
 <via x="-50" y="-10" extent="1-16" drill="0.3"/>
 <via x="-50" y="0" extent="1-16" drill="0.3"/>
 <via x="-50" y="10" extent="1-16" drill="0.3"/>
 <via x="-50" y="20" extent="1-16" drill="0.3"/>
 <via x="-50" y="30" extent="1-16" drill="0.3"/>
-<via x="-50" y="40" extent="1-16" drill="0.3"/>
-<via x="-50" y="50" extent="1-16" drill="0.3"/>
+<via x="-48.984" y="37.841" extent="1-16" drill="0.3"/>
+<via x="-48.73" y="50.635" extent="1-16" drill="0.3"/>
 <via x="50" y="-50" extent="1-16" drill="0.3"/>
-<via x="50" y="-40" extent="1-16" drill="0.3"/>
-<via x="50" y="-30" extent="1-16" drill="0.3"/>
+<via x="49.873" y="-40.889" extent="1-16" drill="0.3"/>
+<via x="49.111" y="-27.841" extent="1-16" drill="0.3"/>
 <via x="50" y="-20" extent="1-16" drill="0.3"/>
 <via x="50" y="-10" extent="1-16" drill="0.3"/>
 <via x="50" y="0" extent="1-16" drill="0.3"/>
 <via x="50" y="10" extent="1-16" drill="0.3"/>
 <via x="50" y="20" extent="1-16" drill="0.3"/>
 <via x="50" y="30" extent="1-16" drill="0.3"/>
-<via x="50" y="40" extent="1-16" drill="0.3"/>
-<via x="50" y="50" extent="1-16" drill="0.3"/>
+<via x="50" y="36" extent="1-16" drill="0.3"/>
+<via x="50" y="51.6" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="OUT0">
 <contactref element="U2" pad="13"/>
@@ -1250,6 +1274,20 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="4,1,47475f1cf6f6eead"/>
+<approved hash="4,1,a779bf3b76d16e93"/>
+<approved hash="4,1,a779bf3b76d16e93"/>
+<approved hash="4,1,a779bf3b76d16e93"/>
+<approved hash="4,1,19ebb1e275c7be04"/>
+<approved hash="4,1,a779bf3b76d16e93"/>
+<approved hash="4,1,0f1908f83c0c3bed"/>
+<approved hash="4,1,a779bf3b76d16e93"/>
+<approved hash="4,1,47475f1cf6f6eead"/>
+<approved hash="4,1,01baa967ce51a2f0"/>
+<approved hash="4,1,7debb8541135b764"/>
+<approved hash="4,1,a779bf3b76d16e93"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
